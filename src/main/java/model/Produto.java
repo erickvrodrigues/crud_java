@@ -9,20 +9,19 @@ public class Produto {
 
     public Produto(){
 
-
     }
 
     public Produto(String nomePrd, double preco, int qtd) {
-        this.nomePrd = nomePrd;
-        this.preco = preco;
-        this.qtd = qtd;
+        setNomePrd(nomePrd);
+        setPreco(preco);
+        setQtd(qtd);
     }
 
     public Produto(int id, String nomePrd, double preco, int qtd) {
-        this.id = id;
-        this.nomePrd = nomePrd;
-        this.preco = preco;
-        this.qtd = qtd;
+        setId(id);
+       setNomePrd(nomePrd);
+        setPreco(preco);
+        setQtd(qtd);
     }
 
     public int getId() {
@@ -31,7 +30,7 @@ public class Produto {
 
     public void setId(int id) {
         if(this.id < 0){
-            throw new IllegalArgumentException("ID não pode ser um valor vazio");
+            throw new IllegalArgumentException("ID não pode ser um valor vazio.");
         }
         this.id = id;
     }
@@ -42,7 +41,7 @@ public class Produto {
 
     public void setNomePrd(String nomePrd) {
         if(this.nomePrd == null || this.nomePrd.trim().isBlank()){
-            throw new IllegalArgumentException("Nome não pode ser vazio");
+            throw new IllegalArgumentException("Nome não pode ser vazio.");
         }
         this.nomePrd = nomePrd.trim();
     }
@@ -67,5 +66,13 @@ public class Produto {
             throw new IllegalArgumentException("Quantidade não pode ser negativa.");
         }
         this.qtd = qtd;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Produt { id=%d | nome='%s' | preço=%.2f | quantidade=%d }",
+                id, nomePrd, preco, qtd
+        );
     }
 }
