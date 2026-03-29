@@ -1,7 +1,7 @@
-package com.exemple.repository;
+package repository;
 
-import com.exemple.database.DatabaseConnection;
-import com.exemple.model.Produto;
+import database.DatabaseConnection;
+import model.Produto;
 
 import java.sql.*;
 import java.util.ArrayList;
