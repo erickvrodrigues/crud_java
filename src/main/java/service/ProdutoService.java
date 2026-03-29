@@ -1,7 +1,7 @@
-package com.exemple.service;
+package service;
 
-import com.exemple.model.Produto;
-import com.exemple.repository.ProdutoRepository;
+import model.Produto;
+import repository.ProdutoRepository;
 
 import java.sql.SQLException;
 import java.util.List;
