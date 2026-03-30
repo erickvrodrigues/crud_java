@@ -36,7 +36,7 @@ public class Main {
             ProdutoRepository repository = new ProdutoRepository();
             ProdutoService    service    = new ProdutoService(repository);
 
-            System.out.println("         CRUD Java + PostgreSQL        ");
+            System.out.println("//////////////// CRUD Java + PostgreSQL /////////////////////");
 
             System.out.println("/////////////////// CREATE ///////////////////");
             Produto p1 = service.criarProduto("Notebook Gamer",  4500.00, 10);
