@@ -38,8 +38,8 @@ public class DatabaseConnection {
     public void closeConnection() {
         try {
             if (connection != null && !connection.isClosed()){
-                connection.isClosed();
-                System.out.println("Coexao encerrada.");
+                connection.close();
+                System.out.println("Conexao encerrada.");
             }
         } catch (SQLException e) {
             System.out.println("Erro ao fechar conexao: " + e.getMessage());
