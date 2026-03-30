@@ -1,6 +1,6 @@
 # CRUD Java + PostgreSQL com Encapsulamento
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 src/
@@ -17,7 +17,7 @@ src/
 setup.sql                              ← Script de setup do banco
 ```
 
-## 🏗️ Arquitetura em Camadas
+## Arquitetura em Camadas
 
 | Camada       | Classe                  | Responsabilidade                        |
 |-------------|-------------------------|-----------------------------------------|
@@ -26,20 +26,20 @@ setup.sql                              ← Script de setup do banco
 | **Service**  | `ProdutoService`        | Regras de negócio e orquestração        |
 | **Database** | `DatabaseConnection`    | Singleton de conexão com PostgreSQL     |
 
-## 🔒 Encapsulamento Aplicado
+## Encapsulamento Aplicado
 
 - Todos os atributos de `Produto` são **`private`**
 - **Setters com validação** (nome não vazio, preço/quantidade não negativos)
 - `DatabaseConnection` usa padrão **Singleton** com construtor privado
 - `ProdutoRepository` expõe apenas a interface `CrudRepository`
 
-## ⚙️ Pré-requisitos
+## Pré-requisitos
 
 - Java 17+
 - PostgreSQL 13+
 - Driver JDBC: [postgresql-42.x.x.jar](https://jdbc.postgresql.org/download/)
 
-## 🚀 Como Executar
+## Como Executar
 
 ### 1. Configure o banco
 ```bash
@@ -63,7 +63,7 @@ javac -cp ".:postgresql-42.7.3.jar" -d out $(find src -name "*.java")
 java -cp ".:out:postgresql-42.7.3.jar" Main
 ```
 
-## 📦 Saída esperada
+## Saída esperada
 
 ```
 ✅ Conexão com PostgreSQL estabelecida!
@@ -78,6 +78,6 @@ java -cp ".:out:postgresql-42.7.3.jar" Main
 ✅ Produto criado: Produto { id=3 | nome='Teclado Mecânico' | preço=R$ 350,00 | quantidade=30 }
  
 ── READ — Todos ────────────────────────
-📦 Total de produtos: 3
+Total de produtos: 3
 Produto { id=1 | nome='Notebook Gamer' | preço=R$ 4500,00 | quantidade=10 }
 ...
