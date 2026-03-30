@@ -29,7 +29,7 @@ public class Produto {
     }
 
     public void setId(int id) {
-        if(this.id < 0){
+        if(id < 0){
             throw new IllegalArgumentException("ID não pode ser um valor vazio.");
         }
         this.id = id;
@@ -40,7 +40,7 @@ public class Produto {
     }
 
     public void setNomePrd(String nomePrd) {
-        if(this.nomePrd == null || this.nomePrd.trim().isBlank()){
+        if(nomePrd == null || nomePrd.trim().isBlank()){
             throw new IllegalArgumentException("Nome não pode ser vazio.");
         }
         this.nomePrd = nomePrd.trim();
@@ -51,7 +51,7 @@ public class Produto {
     }
 
     public void setPreco(double preco) {
-        if (this.preco < 0){
+        if (preco < 0){
             throw new IllegalArgumentException("Preço não pode ser negativo.");
         }
         this.preco = preco;
@@ -62,7 +62,7 @@ public class Produto {
     }
 
     public void setQtd(int qtd) {
-        if(this.qtd < 0){
+        if(qtd < 0){
             throw new IllegalArgumentException("Quantidade não pode ser negativa.");
         }
         this.qtd = qtd;
