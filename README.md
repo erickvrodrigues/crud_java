@@ -66,16 +66,16 @@ java -cp ".:out:postgresql-42.7.3.jar" Main
 ## Saída esperada
 
 ```
-✅ Conexão com PostgreSQL estabelecida!
+ Conexão com PostgreSQL estabelecida!
  
 ══════════════════════════════════════
          CRUD Java + PostgreSQL
 ══════════════════════════════════════
  
 ── CREATE ──────────────────────────────
-✅ Produto criado: Produto { id=1 | nome='Notebook Gamer' | preço=R$ 4500,00 | quantidade=10 }
-✅ Produto criado: Produto { id=2 | nome='Mouse Sem Fio' | preço=R$ 150,00 | quantidade=50 }
-✅ Produto criado: Produto { id=3 | nome='Teclado Mecânico' | preço=R$ 350,00 | quantidade=30 }
+ Produto criado: Produto { id=1 | nome='Notebook Gamer' | preço=R$ 4500,00 | quantidade=10 }
+ Produto criado: Produto { id=2 | nome='Mouse Sem Fio' | preço=R$ 150,00 | quantidade=50 }
+ Produto criado: Produto { id=3 | nome='Teclado Mecânico' | preço=R$ 350,00 | quantidade=30 }
  
 ── READ — Todos ────────────────────────
 Total de produtos: 3
